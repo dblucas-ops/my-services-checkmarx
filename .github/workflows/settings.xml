@@ -14,7 +14,7 @@
                 </repository>
                 <repository>
                     <id>github</id>
-                    <url>https://maven.pkg.github.com/cal0610/*</url>
+                    <url>https://maven.pkg.github.com/dblucas-ops/*</url>
                     <snapshots>
                         <enabled>true</enabled>
                     </snapshots>
