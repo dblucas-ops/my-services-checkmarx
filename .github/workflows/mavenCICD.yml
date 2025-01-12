@@ -55,4 +55,4 @@ jobs:
     - name: Publish to GitHub Packages
       run: mvn -X deploy -DaltDeploymentRepository='github::default::https://maven.pkg.github.com/dblucas-ops/enterprise-services-devops-stub'
       env:
-        GITHUB_TOKEN: $MY_GITHUB_TOKEN
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
