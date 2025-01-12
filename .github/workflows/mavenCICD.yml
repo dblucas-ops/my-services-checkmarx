@@ -53,6 +53,6 @@ jobs:
         server-id: github
         settings-path: ${{ github.workspace }}
     - name: Publish to GitHub Packages
-      run: mvn deploy -DaltDeploymentRepository='github::default::https://maven.pkg.github.com/dblucas-ops/enterprise-services-devops-stub
+      run: mvn deploy -DaltDeploymentRepository='github::default::https://maven.pkg.github.com/dblucas-ops/enterprise-services-devops-stub'
       env:
         GITHUB_TOKEN: $MY_GITHUB_TOKEN
