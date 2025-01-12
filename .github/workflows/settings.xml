@@ -14,7 +14,7 @@
                 </repository>
                 <repository>
                     <id>github</id>
-                    <url>https://maven.pkg.github.com/dblucas-ops/*</url>
+                    <url>https://maven.pkg.github.com/dblucas-ops/enterprise-services-devops-stub</url>
                     <snapshots>
                         <enabled>true</enabled>
                     </snapshots>
