@@ -14,19 +14,13 @@ jobs:
           echo "${DBL_GITHUB_TOKEN}"
           echo "${MY_GITHUB_TOKEN}"
           echo "${GH_TOKEN}"
-          echo "${{DBL_GITHUB_TOKEN}}"
-          echo "${{MY_GITHUB_TOKEN}}"
-          echo "${{GH_TOKEN}}"
-          echo "${{DBL_GITHUB_TOKEN}}"
-          echo "${{MY_GITHUB_TOKEN}}"
-          echo "${{GH_TOKEN}}"
-codeql:
+  codeql:
     needs: init
     runs-on: ubuntu-latest
     steps:
       - name: CODEQL Running
         run: |
-          echo "CODEQL Code Scan Running: Open 'Push on main' job output"
+          echo "CODEQL Code Scan Running: Open Push on main job output"
   build:
     runs-on: ubuntu-latest
     steps:
