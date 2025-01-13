@@ -217,14 +217,9 @@
 	<distributionManagement>
 	  <repository>
 	   <id>github</id>
-	   <name>github</name>
+	   <name>GitHub Packages</name>
 	   <url>https://maven.pkg.github.com/dblucas-ops/my-services-devops</url>
 	  </repository>
-	  <snapshotRepository>
-	   <id>github</id>
-	   <name>github</name>
-	   <url>https://maven.pkg.github.com/dblucas-ops/my-services-devops</url>
-	  </snapshotRepository>
 	 </distributionManagement>
 </project>
 
