@@ -35,7 +35,7 @@ jobs:
       run: mvn -file pom.xml install -Denv.build.num=1234 -Denv.change.set.num=1234frtt
     - name: Build output statements
       run: |
-        echo "Build with Maven completed successfully..."
+        echo "Build with Maven completed successfully...."
   publish:
     needs: build
     runs-on: ubuntu-latest
