@@ -55,4 +55,4 @@ jobs:
     - name: Publish to GitHub Packages
       run: mvn deploy
       env:
-        GH_TOKEN: ${{ secrets.DBL_GITHUB_TOKEN }}
+        GITHUB_TOKEN: ${{ github.token }}
