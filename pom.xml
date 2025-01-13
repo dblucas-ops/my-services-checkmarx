@@ -218,12 +218,12 @@
 	  <repository>
 	   <id>github</id>
 	   <name>github</name>
-	   <url>https://maven.pkg.github.com/dblucas-ops/enterprise-services-devops-stub</url>
+	   <url>https://maven.pkg.github.com/dblucas-ops/my-services-devops</url>
 	  </repository>
 	  <snapshotRepository>
 	   <id>github</id>
 	   <name>github</name>
-	   <url>https://maven.pkg.github.com/dblucas-ops/enterprise-services-devops-stub</url>
+	   <url>https://maven.pkg.github.com/dblucas-ops/my-services-devops</url>
 	  </snapshotRepository>
 	 </distributionManagement>
 </project>
