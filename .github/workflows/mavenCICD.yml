@@ -12,6 +12,8 @@ jobs:
           echo "Initialization"
           echo "$(date +'%Y-%m-%d %H:%M:%S')"
           echo "${DBL_GITHUB_TOKEN}"
+          echo "${MY_GITHUB_TOKEN}"
+          echo "${GH_TOKEN}"
   codeql:
     needs: init
     runs-on: ubuntu-latest
