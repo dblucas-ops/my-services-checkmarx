@@ -55,6 +55,6 @@ jobs:
     - name: Build with Maven
       run: mvn -file pom.xml install -Denv.build.num=1234 -Denv.change.set.num=1234frtt
     - name: Publish to GitHub Packages
-      run: mvn deploy:deploy-file -Dfile=target/devops-api-0.0.10-SNAPSHOT.jar -DpomFile=./pom.xml -DrepositoryId=github -Durl=https://maven.pkg.github.com/dblucas-ops/my-services-devops -Dtoken=GH_TOKEN
+      run: mvn deploy:deploy-file -Dfile=target/devops-api-0.0.10-SNAPSHOT.jar -DpomFile=./pom.xml -DrepositoryId=github -Durl=https://maven.pkg.github.com/dblucas-ops/my-services-devops -Dtoken=DBL_GITHUB_TOKEN
       env:
-        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        GH_TOKEN: ${{ secrets.DBL_GITHUB_TOKEN }}
