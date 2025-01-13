@@ -19,7 +19,7 @@ jobs:
         run: |
           echo "CODEQL Code Scan Running: Open 'Push on main' job output"
           echo "$(date +'%Y-%m-%d %H:%M:%S')"
-          echo "${DBL_GITHUB_TOKEN}"
+          echo "DBL_GITHUB_TOKEN: ${{ DBL_GITHUB_TOKEN }}"
   build:
     runs-on: ubuntu-latest
     steps:
