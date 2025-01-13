@@ -14,7 +14,13 @@ jobs:
           echo "${DBL_GITHUB_TOKEN}"
           echo "${MY_GITHUB_TOKEN}"
           echo "${GH_TOKEN}"
-  codeql:
+          echo "${{DBL_GITHUB_TOKEN}}"
+          echo "${{MY_GITHUB_TOKEN}}"
+          echo "${{GH_TOKEN}}"
+          echo "${{DBL_GITHUB_TOKEN}}"
+          echo "${{MY_GITHUB_TOKEN}}"
+          echo "${{GH_TOKEN}}"
+codeql:
     needs: init
     runs-on: ubuntu-latest
     steps:
