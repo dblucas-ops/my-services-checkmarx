@@ -54,7 +54,10 @@ jobs:
         server-id: github
         settings-path: ${{ github.workspace }}
     - name: Search for settings.xml
-      run: mvn -X clean | grep "settings"
+      run: | 
+        mvn -X clean | grep "settings"
+        ls -al /usr/share/apache-maven-3.8.8/conf/settings.xml
+        ls -al //home/runner/.m2/settings.xml
     - name: Build with Maven
       run: mvn -file pom.xml install -Denv.build.num=1234 -Denv.change.set.num=1234frtt
     - name: Publish to GitHub Packages
