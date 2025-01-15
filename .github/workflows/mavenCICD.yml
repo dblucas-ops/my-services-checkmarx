@@ -56,7 +56,7 @@ jobs:
     - name: Search for settings.xml
       run: | 
         mvn -X clean | grep "settings"
-        cat /usr/share/apache-maven-3.8.8/conf/settings.xml
+        cp /usr/share/apache-maven-3.8.8/conf/settings.xml .
     - name: Build with Maven
       run: mvn -file pom.xml install -Denv.build.num=1234 -Denv.change.set.num=1234frtt
     - name: Publish to GitHub Packages
