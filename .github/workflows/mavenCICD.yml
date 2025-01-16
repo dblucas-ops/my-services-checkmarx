@@ -64,8 +64,8 @@ jobs:
     - name: Publish to GitHub Packages
       run: |
         cat "settings.xml"
-        echo "${env.GITHUB_ACTOR}"
-        echo "${env.GITHUB_TOKEN}"
+        echo "${{env.GITHUB_ACTOR}}"
+        echo "${{env.GITHUB_TOKEN}}"
         mvn -s settings.xml deploy
       env:
         GH_TOKEN: ${{ secrets.DBL_GITHUB_TOKEN }}
