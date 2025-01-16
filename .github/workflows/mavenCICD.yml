@@ -61,8 +61,6 @@ jobs:
       run: mvn -file pom.xml install -Denv.build.num=1234 -Denv.change.set.num=1234frtt
     - name: Publish to GitHub Packages
       run: |
-        echo "${{env.GITHUB_ACTOR}}"
-        echo "${{env.GITHUB_TOKEN}}"
-        mvn -s settings.xml deploy
+         mvn -s settings.xml deploy
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
