@@ -3,7 +3,7 @@
         <server>
         <id>github</id>
             <username>dblucas-ops</username>
-            <password>${{DBL_GITHUB_TOKEN}}</password>
+            <password>${{secrets.DBL_GITHUB_TOKEN}}</password>
         </server>
     </servers>
 </settings>
