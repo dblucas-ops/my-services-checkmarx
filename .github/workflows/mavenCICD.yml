@@ -36,7 +36,7 @@ jobs:
     - name: Build output statements
       run: |
         echo "Build with Maven completed successfully...."
-  publish:
+  github_packages_publish:
     needs: build
     runs-on: ubuntu-latest
     permissions:
@@ -59,7 +59,7 @@ jobs:
         cp -f settings.xml /home/runner/.m2/settings.xml
     - name: Maven prime
       run: mvn -file pom.xml install -Denv.build.num=1234 -Denv.change.set.num=1234frtt
-    - name: Maven Publish
+    - name: Maven Github Packages Publish
       run: mvn deploy
       env:
           GITHUB_TOKEN: ${{ github.token }}
