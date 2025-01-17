@@ -60,13 +60,13 @@ jobs:
     - name: Maven prime
       run: mvn -file pom.xml install -Denv.build.num=1234 -Denv.change.set.num=1234frtt
     - name: Maven Github Packages Publish
+      run: mvn deploy
+      env:
+          GITHUB_TOKEN: ${{ github.token }}
   post_action:
     needs: github_packages_publish
     runs-on: ubuntu-latest
     steps:
-      - name: Post Action Running
-        run: |
-
-      run: mvn deploy
-      env:
-          GITHUB_TOKEN: ${{ github.token }}
+    - name: Post Action Running
+      run: |
+        echo "Post Action Running"
