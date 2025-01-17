@@ -61,4 +61,5 @@ jobs:
       run: mvn -file pom.xml install -Denv.build.num=1234 -Denv.change.set.num=1234frtt
     - name: Maven Publish
       run: mvn deploy
-      
+      env:
+          GITHUB_TOKEN: ${{ github.token }}
